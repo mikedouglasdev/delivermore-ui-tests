@@ -63,6 +63,10 @@ namespace DelivermoreUITests
             WebDriver.Manage().Window.Maximize();
         }
 
+        public static void Quit()
+        {
+            WebDriver.Quit();
+        }
 
     }
 }

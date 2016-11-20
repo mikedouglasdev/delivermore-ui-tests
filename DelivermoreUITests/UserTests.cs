@@ -33,7 +33,7 @@ namespace DelivermoreUITests
 
             LoginPage loginPage = new LoginPage(driver);
 
-            loginPage.Logon("abc@abc.com", "P@ssw0rd").Logoff();
+            loginPage.Logon(" ", "P@ssw0rd").Logoff();
 
             Browser.Close();
         }
@@ -48,6 +48,12 @@ namespace DelivermoreUITests
             {
                 _testContextInstance = value;
             }
+        }
+
+        [TestCleanup]
+        public void TestCleanup()
+        {
+            Browser.Quit();
         }
     }
 }
