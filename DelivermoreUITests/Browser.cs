@@ -36,6 +36,11 @@ namespace DelivermoreUITests
             return new WebDriverWait(WebDriver, TimeSpan.FromSeconds(30));
         }
 
+        public static string Title
+        {
+            get { return WebDriver.Title; }
+        }
+
         public static IWebDriver Open(string url, string browserName)
         {
             DesiredCapabilities capability = new DesiredCapabilities();

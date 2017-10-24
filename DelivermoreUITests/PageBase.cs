@@ -79,7 +79,7 @@ namespace DelivermoreUITests
 
                 Screenshot ss = ((ITakesScreenshot)Browser.Driver).GetScreenshot();
 
-                ss.SaveAsFile(filePath, ImageFormat.Png);
+                // ss.SaveAsFile(filePath, ImageFormat.Png);
 
             }
 
