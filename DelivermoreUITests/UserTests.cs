@@ -16,7 +16,7 @@ namespace DelivermoreUITests
             if (TestContext.Properties.Contains("environment"))
             {
                 string environment = TestContext.Properties["environment"].ToString();
-                _url = environment == "Test" ? "http://delivermorermtest.azurewebsites.net/" : "http://delivermorermprod.azurewebsites.net/";
+                _url = "http://delivermorermtest.azurewebsites.net/";
             }
 
             if (TestContext.Properties.Contains("browser"))

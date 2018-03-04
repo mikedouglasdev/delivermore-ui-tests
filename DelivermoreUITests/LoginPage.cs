@@ -62,7 +62,6 @@ namespace DelivermoreUITests
             Password.SendKeys(password);
 
             LoginButton.Click();
-
             return new MainPage(WebDriver);
         }
 

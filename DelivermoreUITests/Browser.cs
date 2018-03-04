@@ -56,7 +56,7 @@ namespace DelivermoreUITests
             }
             WebDriver.Navigate().GoToUrl(server);
 
-            WebDriver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(3));
+            WebDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
 
             MaximizeWindow();
 
